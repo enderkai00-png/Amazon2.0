@@ -31,3 +31,131 @@
   --background: #ffffff;
   box-shadow: none;
 }
+
+/* Aplicar fondo general usando la variable del tema (similar a Amazon) */
+ion-app, ion-page, ion-content {
+  --background: var(--ion-background-color);
+  background: var(--ion-background-color) !important;
+  color: var(--ion-text-color);
+}
+
+/* Cabecera estilo Amazon: barra principal con color primario */
+ion-header ion-toolbar {
+  --background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
+}
+
+/* Título dentro de la toolbar */
+ion-header ion-toolbar ion-title {
+  color: var(--ion-color-primary-contrast);
+  font-weight: 600;
+}
+
+/* Ajustes para tarjetas tipo catálogo */
+.product-card {
+  display: inline-block;
+  width: 260px;
+  margin: 8px;
+  --background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  vertical-align: top;
+}
+
+.product-card .card-body {
+  padding: 10px;
+}
+
+.rating-badge {
+  background: var(--ion-color-secondary);
+  color: var(--ion-color-secondary-contrast);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* Botón principal (Añadir) con color secundario */
+.btn-add {
+  background: var(--ion-color-secondary);
+  color: var(--ion-color-secondary-contrast);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Header / toolbar custom layout */
+.main-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+}
+
+.brand {
+  color: var(--ion-color-primary-contrast);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+}
+
+.search-wrap {
+  flex: 1 1 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1 1 auto;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.search-btn {
+  background: var(--ion-color-secondary);
+  color: var(--ion-color-secondary-contrast);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.action-link {
+  background: transparent;
+  color: var(--ion-color-primary-contrast);
+  border: none;
+}
+
+.cart {
+  background: transparent;
+  color: var(--ion-color-primary-contrast);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Hero banner similar-ish to Amazon promo strip */
+.hero-banner {
+  background: linear-gradient(90deg,#ff3b3b 0%, #ff6969 100%);
+  color: white;
+  padding: 32px 16px;
+  margin-bottom: 16px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-inner h1 { margin: 0; font-size: 2rem; }
+.hero-inner p { margin: 0 16px; opacity: 0.95; }
+.cta { background: #fff; color: #111; padding: 10px 18px; border-radius: 20px; border: none; font-weight: 700; }

@@ -1,0 +1,79 @@
+[
+  {
+    "_id": "P3001",
+    "nombre": "Smartphone Galaxy X",
+    "precio": 599.0,
+    "categoria": "Electrónica",
+    "vendedor_id": "V2001",
+    "stock": 50,
+    "descripcion": "Smartphone de última generación con cámara triple",
+    "marca": "Samsung",
+    "imagenes": ["galaxy_x_1.jpg", "galaxy_x_2.jpg"],
+    "caracteristicas": {
+      "pantalla": "6.5 pulgadas",
+      "almacenamiento": "128GB",
+      "ram": "8GB",
+      "color": "Negro"
+    },
+    "calificacion_promedio": 4.7,
+    "total_resenas": 125
+  },
+  {
+    "_id": "P3002",
+    "nombre": "Novela 'El Susurro'",
+    "precio": 18.9,
+    "categoria": "Libros",
+    "vendedor_id": "V2002",
+    "stock": 120,
+    "descripcion": "Best-seller de misterio y suspenso",
+    "marca": "Editorial Luna",
+    "imagenes": ["susurro_portada.jpg"],
+    "caracteristicas": {
+      "autor": "Ana Martínez",
+      "paginas": 350,
+      "tapa": "Blanda",
+      "idioma": "Español"
+    },
+    "calificacion_promedio": 4.5,
+    "total_resenas": 89
+  },
+  {
+    "_id": "P3003",
+    "nombre": "Zapatillas Running Pro",
+    "precio": 89.99,
+    "categoria": "Ropa Deportiva",
+    "vendedor_id": "V2003",
+    "stock": 75,
+    "descripcion": "Zapatillas profesionales para running",
+    "marca": "Nike",
+    "imagenes": ["zapatillas_negras.jpg", "zapatillas_lateral.jpg"],
+    "caracteristicas": {
+      "talla": "40-45",
+      "color": "Negro/Rojo",
+      "material": "Malla transpirable",
+      "uso": "Running"
+    },
+    "calificacion_promedio": 4.3,
+    "total_resenas": 67
+  }
+  ,
+  {
+    "_id": "P3011",
+    "nombre": "SAMSUNG GALAXY S25 ULTRA - 512GB",
+    "precio": 1299.00,
+    "categoria": "Electrónica",
+    "vendedor_id": "V2011",
+    "stock": 25,
+    "descripcion": "SAMSUNG GALAXY S25 ULTRA con 512GB de almacenamiento",
+    "marca": "Samsung",
+    "imagenes": ["https://via.placeholder.com/400x400?text=SAMSUNG+GALAXY+S25+ULTRA+512GB"],
+    "caracteristicas": {
+      "pantalla": "6.8 pulgadas",
+      "almacenamiento": "512GB",
+      "ram": "12GB",
+      "color": "Grafito"
+    },
+    "calificacion_promedio": 4.8,
+    "total_resenas": 18
+  }
+]

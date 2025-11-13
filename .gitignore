@@ -1,0 +1,14 @@
+# Ignore node modules and build caches for the sub-project
+/imit_x/node_modules/
+/imit_x/.vite/
+/imit_x/dist/
+
+# OS and editor files
+.DS_Store
+npm-debug.log*
+.env
+.vscode/
+.idea/
+
+# Logs
+*.log
