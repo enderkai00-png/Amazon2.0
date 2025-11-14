@@ -47,6 +47,11 @@ const ExploreContainer: React.FC = () => {
 
             const status = imgStatus[p._id] ?? 'loading';
 
+            // Override display name only for the product that in data is "Smartphone Galaxy X"
+            const displayName = (p._id === 'P3001' || p.nombre === 'Smartphone Galaxy X')
+              ? 'Smartphone Samsung Galaxy S24 Fe dual SIM gris 128gb 8gb RAM'
+              : p.nombre;
+
             return (
               <IonCol size="12" size-sm="6" size-md="4" size-lg="3" key={p._id}>
                 <IonCard>
@@ -55,7 +60,7 @@ const ExploreContainer: React.FC = () => {
                     <div className={`img-skeleton ${status === 'loaded' ? 'hidden' : ''}`} />
                     <img
                       src={imageSrc}
-                      alt={p.nombre}
+                      alt={displayName}
                       loading="lazy"
                       onLoad={() => setImgStatus(prev => ({ ...prev, [p._id]: 'loaded' }))}
                       onError={(e) => {
@@ -69,7 +74,7 @@ const ExploreContainer: React.FC = () => {
                     />
                   </div>
                   <IonCardHeader>
-                    <IonCardTitle>{p.nombre}</IonCardTitle>
+                    <IonCardTitle>{displayName}</IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent>
                     <div className="price-row">
