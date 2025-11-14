@@ -57,7 +57,7 @@ const ExploreContainer: React.FC = () => {
                 <IonCard>
                   <div className="card-image">
                     {/* skeleton shown while loading */}
-                    <div className={`img-skeleton ${status === 'loaded' ? 'hidden' : ''}`} />
+                    <div className={`img-skeleton ${status !== 'loading' ? 'hidden' : ''}`} />
                     <img
                       src={imageSrc}
                       alt={displayName}
@@ -67,10 +67,11 @@ const ExploreContainer: React.FC = () => {
                         const target = e.currentTarget as HTMLImageElement;
                         if (target.src !== PLACEHOLDER(p.nombre)) {
                           target.src = PLACEHOLDER(p.nombre);
+                          // mark as error but still show the placeholder
                           setImgStatus(prev => ({ ...prev, [p._id]: 'error' }));
                         }
                       }}
-                      style={{ display: status === 'loaded' ? 'block' : 'none' }}
+                      style={{ display: status !== 'loading' ? 'block' : 'none' }}
                     />
                   </div>
                   <IonCardHeader>
