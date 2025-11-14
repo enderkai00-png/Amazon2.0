@@ -17,6 +17,26 @@
   object-fit: cover;
 }
 
+/* Skeleton while image loads */
+.card-image { position: relative; }
+.img-skeleton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 180px;
+  background: linear-gradient(90deg,#f0f0f0,#e8e8e8,#f0f0f0);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+  border-radius: 4px 4px 0 0;
+}
+.img-skeleton.hidden { display: none; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .product-card {
   background: #fff;
   border-radius: 6px;
